@@ -26,4 +26,3 @@ augroup FuzzyHistory
 augroup END
 
 nnoremap <silent> <expr> <Plug>(fuzzy-history) (empty(getcmdwintype()) ? "q:" : "") .. ":<C-u>call <SID>cmdline()<CR>"
-nmap <C-f> <Plug>(fuzzy-history)
