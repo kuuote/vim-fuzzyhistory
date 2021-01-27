@@ -1,0 +1,19 @@
+*fuzzyhistory.txt*	cmdwin用matcher
+
+Author: kuuote <znmxodq1@gmail.com>
+License: NYSL
+
+==============================================================================
+使い方						*fuzzyhistory-usage*
+
+<Plug>(fuzzy-history)				*<Plug>(fuzzy-history)*
+	適当なキーにnmapしてください。
+	現在表示されているcmdwinを絞り込むためのインターフェースを開始します。
+	この際cmdwinが開かれていなければExコマンドの履歴を開きます。
+例:
+>
+	nmap <C-f> <Plug>(fuzzy-history)
+<
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
