@@ -22,7 +22,7 @@ endfunction
 augroup FuzzyHistory
   autocmd!
   autocmd CmdwinEnter * let s:hist = getline(1, "$")
-  autocmd CmdlineLeave * autocmd! FuzzyHistory CmdlineChanged
+  autocmd CmdlineLeave * call s:leave()
 augroup END
 
 nnoremap <silent> <expr> <Plug>(fuzzy-history) (empty(getcmdwintype()) ? "q:" : "") .. ":<C-u>call <SID>cmdline()<CR>"
